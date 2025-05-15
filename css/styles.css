@@ -1,0 +1,278 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Top Bar */
+.top-bar {
+  background-color: #3B3590;
+  font-size: 0.875rem;
+  color: white;
+  padding: 8px 15px;
+  position: relative;
+  z-index: 1050;
+}
+.top-bar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Navbar */
+.navbar-custom {
+  background-color: #ffffff;
+  position: relative; /* change from absolute if needed */
+  top: 0;
+  z-index: 1000;
+  
+  
+}
+
+
+
+.navbar-custom .navbar-brand {
+  color: #E12A76;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: #3B3590; /* dark text for white bg */
+  font-weight: 500;
+  transition: color 0.3s;
+  font-weight: 700;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover,
+.navbar-custom .navbar-nav .nav-link.active {
+  color: #A6CE39;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+
+navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon div {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #A6CE39; /* change to match your theme */
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler-icon div {
+  top: 7px;
+}
+
+.navbar-toggler-icon::before {
+  top: 0;
+}
+
+.navbar-toggler-icon::after {
+  bottom: 0;
+}
+
+/* Hero Section */
+.hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-image 1s ease-in-out;
+}
+
+.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.typed-text {
+  font-size: 3rem;
+  font-weight: 600;
+  color: white;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.btn-brand {
+  background-color: #A6CE39;
+  color: #3B3590;
+  font-weight: 600;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-brand:hover {
+  background-color: #7ea91e;
+  color: white;
+}
+
+/* Info Section */
+.info-section {
+  background-color: #3B3590;
+  color: white;
+  padding: 40px 0;
+}
+
+.info-section h5 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.info-section ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.info-section ul li {
+  margin-bottom: 8px; /* reduce spacing between list items */
+}
+
+.info-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.info-section a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background-color: #2e2a70;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.about-section {
+  background-color: #f9f9f9;
+}
+
+.about-section h2 {
+  color: #E12A76;
+  font-weight: 700;
+}
+
+.about-section p {
+  color: #333;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.about-section .btn-brand {
+  background-color: #A6CE39;
+  color: #3B3590;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 10px 25px;
+  transition: background-color 0.3s ease;
+}
+
+.about-section .btn-brand:hover {
+  background-color: #7ea91e;
+  color: white;
+}
+
+.services-section {
+  background-color: #A6CE39;
+}
+
+.services-section h5 {
+  color: #3B3590;
+  font-weight: 700;
+}
+
+.service-card {
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-img-full {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px; /* Fully rounded corners */
+}
+
+.search-ribbon {
+  background-color: #A6CE39;
+  padding: 10px 15px;
+  animation: slideDown 0.3s ease forwards;
+  position: relative;
+  z-index: 1050;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.search-ribbon input.form-control {
+  max-width: 500px;
+}
+
+.search-ribbon button {
+  white-space: nowrap;
+}
+
+.navbar-nav .btn {
+  padding: 5px 10px;
+  font-size: 0.95rem;
+}
+
+.navbar-nav {
+  margin-right: auto;
+  margin-left: auto;
+}
