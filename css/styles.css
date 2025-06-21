@@ -276,3 +276,85 @@ navbar-toggler-icon::before,
   margin-right: auto;
   margin-left: auto;
 }
+
+/*scroll Behavior*/
+html {
+  scroll-behavior: smooth;
+}
+/* contact */
+.contact-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.card p, .card h6 {
+  font-family: 'Poppins', sans-serif;
+}
+.text-dbs-pink {
+  color: #E12A76 !important;
+}
+.text-dbs-pink:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* about us*/
+.text-dbs-pink {
+  color: #E12A76 !important;
+}
+
+.btn-outline-dbs-pink {
+  border: 2px solid #E12A76;
+  color: #E12A76;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
+}
+
+.btn-outline-dbs-pink:hover {
+  background-color: #E12A76;
+  color: white;
+  transform: scale(1.02);
+}
+/* WhatsApp Chat Box */
+.whatsapp-chat-box {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 280px;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  display: none;
+  z-index: 9999;
+}
+.whatsapp-chat-box .header {
+  background-color: #25D366;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.whatsapp-chat-box .body {
+  background-color: #f8f9fa;
+}
+
+/* WhatsApp Toggle Button */
+.whatsapp-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9999;
+  transition: background 0.3s;
+}
+.whatsapp-toggle:hover {
+  background-color: #1ebf59;
+}
+

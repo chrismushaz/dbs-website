@@ -1,8 +1,8 @@
 // Background slideshow
 const images = [
-    'images/img1.jpg',
-    'images/img4.jpg',
-    'images/img3.jpeg'
+    'images/imgs4.jpg',
+    'images/imgs2.jpg',
+    'images/imgs1.jpg'
   ]; // Replace with your actual image paths
   
   let index = 0;
@@ -39,3 +39,14 @@ const images = [
   closeSearch.addEventListener('click', () => {
     searchRibbon.classList.add('d-none');
   });
+
+  /* whatsapp float */
+  document.getElementById("chat-toggle").addEventListener("click", function () {
+    document.getElementById("whatsapp-chat").style.display = "block";
+    this.style.display = "none";
+  });
+
+  document.getElementById("close-chat").addEventListener("click", function () {
+    document.getElementById("whatsapp-chat").style.display = "none";
+    document.getElementById("chat-toggle").style.display = "flex";
+  })
